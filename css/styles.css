@@ -11303,3 +11303,22 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+.navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar-nav .nav-item::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red; 
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item:hover::before {
+  width: 100%;
+}
