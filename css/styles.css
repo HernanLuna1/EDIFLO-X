@@ -11016,12 +11016,12 @@ body {
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    color: rgba(128, 128, 128, 1);
+    color: white;
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: white;
   }
   #mainNav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75);
@@ -11033,7 +11033,7 @@ body {
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #000;
+    color: black;
   }
   #mainNav.navbar-shrink .nav-link {
     color: #000;
