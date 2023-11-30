@@ -11121,7 +11121,7 @@ body {
     padding: 0;
   }
 }
-#prueba{
+#hero-servicios{
 
   position:absolute;
   z-index: 2;
@@ -11131,7 +11131,7 @@ body {
   /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../imagenes/fotoinicial1.jpg"); */
 }
 
-#prueba h1, #prueba .h1 {
+#hero-servicios h1, #hero-servicios .h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
   line-height: 2.5rem;
@@ -11141,27 +11141,27 @@ body {
   -webkit-background-clip: text;
           background-clip: text;
 }
-#prueba .h2, #prueba .h2 {
+#hero-servicios .h2, #hero-servicios .h2 {
   max-width: 20rem;
   font-size: 1rem;
 }
 @media (min-width: 768px) {
-  #prueba h1, #prueba .h1  {
+  #hero-servicios h1, #hero-servicios .h1  {
     font-size: 4rem;
     line-height: 4rem;
   }
 }
 @media (min-width: 992px) {
-  #prueba {
+  #hero-servicios {
     height: 100vh;
     padding: 0;
   }
-  #prueba h1, #prueba .h1 {
+  #hero-servicios h1, #hero-servicios .h1 {
     font-size: 6.5rem;
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
   }
-  #prueba h2, #prueba .h2 {
+  #hero-servicios h2, #hero-servicios .h2 {
     max-width: 30rem;
     font-size: 1.25rem;
   }
@@ -11326,6 +11326,18 @@ body {
 .navbar-nav .nav-item:hover::before {
   width: 100%;
 }
-img{
-  filter: grayscale(90%);
+
+
+.custom-carousel-item {
+  position: relative;
+}
+
+.custom-carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%);
 }
