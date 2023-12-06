@@ -11446,3 +11446,26 @@ body {
       width: 80%;
   }
 }
+
+#miCarrusel {
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  #miCarrusel {
+    display: none;
+  }
+}
+
+
+#header-mobile {
+  display: none; 
+}
+
+
+@media only screen and (max-width: 767px) {
+  #header-mobile {
+    display: block;
+  }
+}
+
