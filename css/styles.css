@@ -11251,7 +11251,7 @@ body {
 }
 @media (min-width: 992px) {
   .hero {
-    height: 100vh;
+    height: 1vh;
     padding: 0;
   }
   /* .hero h1, .hero .h1 {
@@ -11265,6 +11265,7 @@ body {
   } */
 }
 
+#hero-section{}
 
 
 
