@@ -11573,3 +11573,10 @@ body {
   -webkit-background-clip: text;
           background-clip: text;
 }
+
+
+@media only screen and (max-width: 767px) {
+  #footer-carrusel {
+    font-size: 12px; 
+  }
+}
