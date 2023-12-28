@@ -65,21 +65,34 @@
 
         <div class="row gallery">
             <div class="col-lg-6 col-md-6 mb-4">
-                    <h2>Formulario</h2>
-                    <form id="myForm">
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Correo Electrónico:</label>
-                            <input type="text" class="form-control" id="email" name="email">
-                            <span id="emailError" class="error"></span>
-                        </div>
-            
-                        <div class="mb-3">
-                            <label for="textData" class="form-label">Dato de Texto:</label>
-                            <input type="text" class="form-control" id="textData" name="textData">
-                            <span id="textDataError" class="error"></span>
-                        </div>
-            
+                <h2 class="text-center mb-4">Formulario de Contacto</h2>
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                        <span id="nameError" class="error"></span>
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico:</label>
+                        <input type="text" class="form-control" id="email" name="email">
+                        <span id="emailError" class="error"></span>
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Asunto:</label>
+                        <input type="text" class="form-control" id="subject" name="subject">
+                        <span id="subjectError" class="error"></span>
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+                        <span id="messageError" class="error"></span>
+                    </div>
+                    <div class="text-center">
                         <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
                     </form>
                            
                 </div>
