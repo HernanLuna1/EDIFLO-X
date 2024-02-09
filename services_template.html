@@ -25,7 +25,7 @@
 <body id="page-top">
     <!-- Navigation-->
 
-    <header>
+    <!-- <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="index.html">MADIAN</a>
@@ -44,7 +44,26 @@
                 </div>
             </div>
         </nav>
-    </header>
+    </header> -->
+
+
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+                <div class="container px-4 px-lg-5">
+                    <a class="navbar-brand" href="index.html">MADIAN</a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto_template.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
     <section id="hero-section">
         <div class="hero">
@@ -60,7 +79,7 @@
     </section>
 
 
-    <div class="container mt-5">
+    <div class="container-fluid mt-5">
         <h2 class="text-center mb-4">Conoce nuestro trabajo</h2>
 
         <!-- <div class="row gallery">
@@ -94,42 +113,39 @@
 
         </div> -->
 
-        <div class="container">
+        <div class="container-gallery">
 
             <h1>Galeria de Imagenes</h1>
 
 
-        <div class="image-container">
-            <div class="image">
-                <img src="Imagenes/FOTO-INICIO-Tarjetas.jpeg" alt="">
-            </div>
-            <div class="image">
-                <img src="Imagenes/fotoinicial.jpeg" alt="">
-            </div>
-            <div class="image">
-                <img src="Imagenes/fotoinicial1.jpg" alt="">
-            </div>
-            <div class="image">
-                <img src="Imagenes/fotoinicial2.jpg" alt="">
-            </div>
-            <div class="image">
-                <img src="Imagenes/fotoinicial.jpeg" alt="">
-            </div>
-            <div class="image">
-                <img src="Imagenes/fotoinicial1.jpg" alt="">
-            </div>
-            
-
-            <div class="popup-image">
-                <span>&times;</span>
-                <img src="Imagenes/fotoinicial.jpeg" alt="">
-            </div>
+            <div class="image-container">
+                <div class="image">
+                    <img src="Imagenes/FOTO-INICIO-Tarjetas.jpeg" alt="">
+                </div>
+                <div class="image">
+                    <img src="Imagenes/fotoinicial.jpeg" alt="">
+                </div>
+                <div class="image">
+                    <img src="Imagenes/fotoinicial1.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="Imagenes/fotoinicial2.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="Imagenes/fotoinicial.jpeg" alt="">
+                </div>
+                <div class="image">
+                    <img src="Imagenes/fotoinicial1.jpg" alt="">
+                </div>
 
 
+                <div class="popup-image">
+                    <span>&times;</span>
+                    <img src="Imagenes/fotoinicial.jpeg" alt="">
+                </div>
 
-        
+            </div>
         </div>
-    </div>
     </div>
 
     <!-- Modales hay que agregar un modal por cada imagen xd -->
@@ -188,17 +204,15 @@
                 </div>
             </div>
         </div>
-    </div> --> 
+    </div> -->
 
     <!-- Footer-->
     <footer class="footer bg-black small text-center text-white-50">
         <div class="container px-4 px-lg-5">Copyright &copy; MADIAN 2024</div>
     </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -209,8 +223,8 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    
-    
+
+
     <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
         </script>
@@ -219,22 +233,21 @@
         $(document).ready(function () {
             $('.carousel').carousel();
         });
-    </script>
 
-        <script>
-            document.querySelectorAll('.image-container img').forEach(image => {
-                image.onclick = () => {
-                    document.querySelector('.popup-image').style.display = 'block';
-                    document.querySelector('.popup-image img').src = image.getAttribute('src');
-                }
 
-            });
-
-            document.querySelector('.popup-image span').onclick = () => {
-                document.querySelector('.popup-image').style.display = 'none';
-
+        document.querySelectorAll('.image-container img').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
             }
-        </script>
+
+        });
+
+        document.querySelector('.popup-image span').onclick = () => {
+            document.querySelector('.popup-image').style.display = 'none';
+
+        }
+    </script>
 
 </body>
 

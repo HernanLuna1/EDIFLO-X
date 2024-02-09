@@ -11629,7 +11629,7 @@ body {
 
 
 
-.container h1{
+.container-gallery h1{
   font-size: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: normal;
@@ -11639,7 +11639,7 @@ body {
   text-transform: capitalize;
 }
 
-.container .image-container{
+.container-gallery .image-container{
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -11647,7 +11647,7 @@ body {
   padding: 10px;
 }
 
-.container .image-container .image{
+.container-gallery .image-container .image{
   height: 250px;
   width: 350px;
   border: 10px solid #fff;
@@ -11656,18 +11656,18 @@ body {
   cursor: pointer;
 }
 
-.container .image-container .image img{
+.container-gallery .image-container .image img{
   height: 100%;
   width: 100%;
   object-fit: cover;
   transition: .2s linear;
 }
 
-.container .image-container .image:hover img{
+.container-gallery .image-container .image:hover img{
   transform: scale(1.1);
 }
 
-.container .popup-image{
+.container-gallery .popup-image{
   position: fixed;
   top: 0;
   left: 0;
@@ -11678,7 +11678,7 @@ body {
   display: none;
 }
 
-.container .popup-image span{
+.container-gallery .popup-image span{
   position: absolute;
   top: 0;
   right: 10px;
@@ -11689,7 +11689,7 @@ body {
   z-index: 100;
 }
 
-.container .popup-image img{
+.container-gallery .popup-image img{
   position:absolute;
   top: 50%;
   left: 50%;
@@ -11701,8 +11701,17 @@ body {
 }
 
 @media (max-width:768px){
-  .container .popup-image img{
+  .container-gallery .popup-image img{
       width: 95%;
 
   }
+}
+
+@media (max-width:576px){
+  .hero h1{
+      font-size: 22px;
+  }
+  .container-gallery .popup-image img {
+    width: 150vw;
+}
 }
