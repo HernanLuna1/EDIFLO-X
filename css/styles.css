@@ -11715,3 +11715,11 @@ body {
     width: 150vw;
 }
 }
+@media (max-width:450px){
+  .hero h1{
+      font-size: 20px;
+  }
+  .container-gallery .popup-image img {
+    width: 150vw;
+}
+}
